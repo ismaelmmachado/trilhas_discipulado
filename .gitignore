@@ -1,0 +1,18 @@
+# Sistema / OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Artefatos temporários
+node_modules/
+dist/
+build/

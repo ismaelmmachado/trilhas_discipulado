@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#5B7F3E"/>
+      <stop offset=".5" stop-color="#D9A441"/>
+      <stop offset="1" stop-color="#2C4A73"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.15" r="0.6">
+      <stop offset="0" stop-color="#FFE3A3" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#FFE3A3" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <g fill="#F4E7C4" opacity="0.9">
+    <circle cx="180" cy="120" r="4"/>
+    <circle cx="360" cy="70" r="3"/>
+    <circle cx="820" cy="90" r="4"/>
+    <circle cx="1020" cy="150" r="3"/>
+  </g>
+  <g transform="translate(600 220)" text-anchor="middle">
+    <text x="0" y="0" font-family="Georgia, serif" font-size="90" font-weight="700" fill="#FFFFFF">🧭 A Jornada do Discípulo</text>
+    <text x="0" y="70" font-family="Georgia, serif" font-size="40" font-style="italic" fill="#F5EAD2">Uma caminhada passo a passo que te aproxima de Deus e dos outros</text>
+    <text x="0" y="150" font-family="Arial, sans-serif" font-size="30" letter-spacing="10" font-weight="700" fill="#F2C96B">SER + FAZER + SABER</text>
+  </g>
+</svg>

@@ -1,0 +1,50 @@
+schema: spec-driven
+
+# Project context (optional)
+# This is shown to AI when creating artifacts.
+# Add your tech stack, conventions, style guides, domain knowledge, etc.
+context: |
+  Projeto: "A Jornada do Discípulo" — hub das trilhas de discipulado da Comunidade Vitral
+  (IPIB São José do Rio Preto). Site estático publicado via GitHub Pages em
+  ismaelmmachado/trilhas_discipulado (https://ismaelmmachado.github.io/trilhas_discipulado/).
+
+  Tech stack: HTML5 + CSS puro (sem build step, zero dependências).
+  - Fontes: Playfair Display (títulos) e Inter (corpo), via Google Fonts.
+  - Design tokens: css/tokens.css com paleta por estação via atributo
+    data-etapa (1=verde, 2=dourado, 3=azul marinho).
+  - Estilo em css/estilo.css (mobile-first).
+
+  Estrutura do hub: header com bússola (🧭), hero, 3 estações em cards conectados
+  por linha tracejada, apex "DISCÍPULO" com SVG (caminhante rumo à cruz) e fórmula
+  SER + FAZER + SABER, footer.
+
+  Trilhas existentes (repos separados, já publicados):
+  - Estação 1: https://ismaelmmachado.github.io/trilha_de_novos/index.html
+  - Estação 2: https://ismaelmmachado.github.io/trilha_praticando_o_caminho/index.html
+  - Estação 3 (Fundamentos da Fé): ainda não publicada — card "Em breve" no hub.
+
+  Idioma dos documentos: português (pt-BR).
+  Git: default branch de trabalho é "homologacao"; salvar sempre com tag semver;
+  "main" apenas quando solicitado explicitamente.
+
+# Per-artifact rules (optional)
+# Add custom rules for specific artifacts.
+# Example:
+#   rules:
+#     proposal:
+#       - Keep proposals under 500 words
+#       - Always include a "Non-goals" section
+#     tasks:
+#       - Break tasks into chunks of max 2 hours
+
+# Per-operation guidance (optional)
+# Add advisory guidance for how apply and archive work should be conducted.
+# This is separate from artifact rules above.
+# Example:
+#   operations:
+#     apply:
+#       guidance:
+#         - Keep test summaries concise
+#     archive:
+#       guidance:
+#         - Summarize the archive outcome before finishing
