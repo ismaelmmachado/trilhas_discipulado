@@ -24,8 +24,19 @@ context: |
   - Estação 3 (Fundamentos da Fé): ainda não publicada — card "Em breve" no hub.
 
   Idioma dos documentos: português (pt-BR).
-  Git: default branch de trabalho é "homologacao"; salvar sempre com tag semver;
-  "main" apenas quando solicitado explicitamente.
+
+  REGRA DE OURO (git — nunca esquecer):
+  - "Salva" → commit, push e tag em "homologacao" (branch de trabalho padrão).
+  - "Salva em main" (explícito) → "main".
+  - Tag: usar sempre a tag do contexto em que estamos trabalhando.
+  - Tag específica informada pelo usuário tem precedência sobre qualquer padrão.
+  - "main" só é usado quando solicitado explicitamente.
+  Contexto atual: hub journey-hub → tag v1.0.0 (anotada). Mudanças sem bump
+  (housekeeping/docs) mantêm a tag do contexto, sem mover tag já publicada.
+
+  Deploy (GitHub Pages): Pages serve a raiz da branch "homologacao"; sem build
+  step, basta git push origin homologacao. URL canônica:
+  https://ismaelmmachado.github.io/trilhas_discipulado/
 
 # Per-artifact rules (optional)
 # Add custom rules for specific artifacts.
