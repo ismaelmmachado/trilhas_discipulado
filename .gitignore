@@ -9,6 +9,9 @@ desktop.ini
 *.swp
 *.swo
 
+# Ferramentas locais (comandos/skills locais do agente)
+.opencode/
+
 # Logs
 *.log
 
