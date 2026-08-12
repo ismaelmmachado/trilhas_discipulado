@@ -12,11 +12,14 @@ context: |
   - Fontes: Playfair Display (títulos) e Inter (corpo), via Google Fonts.
   - Design tokens: css/tokens.css com paleta por estação via atributo
     data-etapa (1=verde, 2=dourado, 3=azul marinho).
+  - Paleta clara inspirada no pôster "A JORNADA DO DISCÍPULO.png": bandas
+    horizontais céu → creme → dourado → verde.
   - Estilo em css/estilo.css (mobile-first).
 
-  Estrutura do hub: header com bússola (🧭), hero, 3 estações em cards conectados
-  por linha tracejada, apex "DISCÍPULO" com SVG (caminhante rumo à cruz) e fórmula
-  SER + FAZER + SABER, footer.
+  Estrutura do hub: header com bússola (🧭), hero com a frase "Esteja com
+  Jesus, Torne-se como Ele, Faça como Ele fez." e os pilares SER/FAZER/SABER,
+  3 estações em cards conectados por linha tracejada, apex "DISCÍPULO" com SVG
+  (caminhante rumo à cruz) e fórmula SER + FAZER + SABER, footer na base verde.
 
   Trilhas existentes (repos separados, já publicados):
   - Estação 1: https://ismaelmmachado.github.io/trilha_de_novos/index.html
@@ -31,8 +34,10 @@ context: |
   - Tag: usar sempre a tag do contexto em que estamos trabalhando.
   - Tag específica informada pelo usuário tem precedência sobre qualquer padrão.
   - "main" só é usado quando solicitado explicitamente.
-  Contexto atual: hub journey-hub → tag v1.0.0 (anotada). Mudanças sem bump
-  (housekeeping/docs) mantêm a tag do contexto, sem mover tag já publicada.
+  Contexto atual: hub journey-hub → tag v1.1.0 (anotada, home redesenhada a
+  partir do pôster). A tag v1.0.0 permanece publicada apontando para o hub
+  original. Mudanças sem bump (housekeeping/docs) mantêm a tag do contexto,
+  sem mover tag já publicada.
 
   Deploy (GitHub Pages): Pages serve a raiz da branch "homologacao"; sem build
   step, basta git push origin homologacao. URL canônica:

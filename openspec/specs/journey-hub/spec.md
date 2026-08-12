@@ -5,19 +5,19 @@ O hub apresenta a Jornada do Discípulo como uma caminhada de crescimento progre
 ## Requirements
 ### Requirement: Apresentar as três estações da jornada
 
-A página DEVE (MUST) exibir um cabeçalho com o título "A Jornada do Discípulo", um ícone de bússola (🧭) e o subtítulo "Uma caminhada passo a passo que te aproxima de Deus e dos outros — e você não caminha sozinho." Abaixo, a página DEVE (MUST) conter exatamente três cards de estação, cada um exibindo: ícone visual (🌱, 🌿, 🌳), badge de papel (FILHO, SERVO, MORDOMO), pergunta central, contagem de passos e pilar da estação (SER, FAZER, SABER). As cores de destaque de cada card DEVEM seguir a paleta de sua estação (verde, dourado e azul marinho).
+A página DEVE (MUST) exibir um cabeçalho com o título "A Jornada do Discípulo", um ícone de bússola (🧭) e o subtítulo "Uma caminhada passo a passo que te aproxima de Deus e dos outros — e você não caminha sozinho." Abaixo, a página DEVE (MUST) conter exatamente três cards de estação, cada um exibindo: ícone visual (🌱, 🌿, 🌳), badge de papel (FILHO, SERVO, MORDOMO) com descrição do papel, pergunta central, contagem de passos e pilar da estação (SER, FAZER, SABER). As cores de destaque de cada card DEVEM seguir a paleta de sua estação (verde, dourado e azul marinho).
 
 #### Scenario: Visualização da Estação 1
 - **WHEN** o usuário acessa o hub
-- **THEN** o card da Estação 1 ("Trilha de Novos") é exibido com papel FILHO, pergunta "Quem sou eu?", subtítulo "9 passos · Identidade e Pertencimento", pilar SER e destaque na cor verde
+- **THEN** o card da Estação 1 ("Trilha de Novos") é exibido com papel FILHO, descrição do papel "FILHO — alguém que sabe quem é em Deus", pergunta "Quem sou eu?", subtítulo "9 passos · Identidade e Pertencimento", pilar SER e destaque na cor verde
 
 #### Scenario: Visualização da Estação 2
 - **WHEN** o usuário acessa o hub
-- **THEN** o card da Estação 2 ("Praticando o Caminho") é exibido com papel SERVO, pergunta "Como vivo?", subtítulo "17 passos · Práticas e Caráter", pilar FAZER e destaque na cor dourada
+- **THEN** o card da Estação 2 ("Praticando o Caminho") é exibido com papel SERVO, descrição do papel "SERVO — alguém que pratica os caminhos de Jesus", pergunta "Como vivo?", subtítulo "17 passos · Práticas e Caráter", pilar FAZER e destaque na cor dourada
 
 #### Scenario: Visualização da Estação 3
 - **WHEN** o usuário acessa o hub
-- **THEN** o card da Estação 3 ("Fundamentos da Fé") é exibido com papel MORDOMO, pergunta "O que creio?", subtítulo "8 passos · Compreensão e Fundamentação", pilar SABER e destaque na cor azul marinho
+- **THEN** o card da Estação 3 ("Fundamentos da Fé") é exibido com papel MORDOMO, descrição do papel "MORDOMO — alguém que compreende e ensina a fé", pergunta "O que creio?", subtítulo "8 passos · Compreensão e Fundamentação", pilar SABER e destaque na cor azul marinho
 
 ### Requirement: Navegação para as trilhas publicadas
 
@@ -41,15 +41,15 @@ Enquanto o site de Fundamentos da Fé não estiver publicado, o card da Estaçã
 
 ### Requirement: Identidade visual da jornada
 
-A página DEVE (MUST) apresentar a metáfora da caminhada de base para o topo: gradiente de fundo transitando do verde (base) ao dourado (meio) e ao azul marinho (topo); conectores tracejados e pontilhados ligando as estações; e uma seção de destino "DISCÍPULO" no ápice com uma ilustração de um caminhante seguindo em direção a uma cruz de madeira iluminada, a fórmula "SER + FAZER + SABER" e a frase "Esteja com Jesus, Torne-se como Ele, Faça como Ele fez."
+A página DEVE (MUST) apresentar a metáfora da caminhada de base para o topo inspirada no pôster "A Jornada do Discípulo": paleta clara em bandas horizontais — céu no topo (header e hero), painel creme (estações), faixa dourada e base verde (footer) — conectores ligando as estações e o bloco do destino "DISCÍPULO" no topo do hero, logo após o badge, com a frase "Esteja com Jesus, Torne-se como Ele, Faça como Ele fez.", a fórmula "SER + FAZER + SABER" e os ícones ❤️ + 🖐️ + 🧠.
 
 #### Scenario: Caminho visual entre as estações
 - **WHEN** o usuário percorre a página
-- **THEN** as estações aparecem conectadas por conectores tracejados, conduzindo visualmente da Estação 1 até a seção DISCÍPULO
+- **THEN** as estações aparecem conectadas por conectores, conduzindo visualmente da Estação 1 até a Estação 3
 
-#### Scenario: Destino do discípulo
-- **WHEN** o usuário chega à seção de destino
-- **THEN** a página exibe a ilustração do caminhante rumo à cruz, a fórmula "SER + FAZER + SABER" (❤️ + 🖐️ + 🧠) e a frase teológica do discípulo
+#### Scenario: Bloco do destino no hero
+- **WHEN** o usuário abre a página
+- **THEN** o hero exibe, logo após o badge, o bloco "DISCÍPULO" com a frase "Esteja com Jesus, Torne-se como Ele, Faça como Ele fez.", a fórmula "SER + FAZER + SABER" e os ícones ❤️ + 🖐️ + 🧠
 
 ### Requirement: Responsividade e acessibilidade
 
@@ -59,7 +59,7 @@ A página DEVE (MUST) ser mobile-first (formato vertical, 9:16) sem rolagem hori
 - **WHEN** o usuário abre o hub em uma viewport de 390px de largura
 - **THEN** nenhum conteúdo causa rolagem horizontal e todos os cards cabem na largura da tela
 
-#### Scenario: Contraste do texto no ápice
-- **WHEN** a seção de destino é renderizada sobre o gradiente azul marinho
-- **THEN** os textos da seção mantêm contraste de pelo menos 4.5:1 em relação ao fundo
+#### Scenario: Contraste do bloco do destino
+- **WHEN** o bloco "DISCÍPULO" é renderizado sobre a faixa de céu do hero
+- **THEN** os textos do bloco mantêm contraste de pelo menos 4.5:1 em relação ao fundo
 
