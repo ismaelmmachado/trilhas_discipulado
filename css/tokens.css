@@ -1,23 +1,32 @@
 :root {
-  --font-heading: 'Playfair Display', Georgia, serif;
-  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-heading: 'Montserrat', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-body: 'Montserrat', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* === CORES DA MARCA === */
+  --brand-petroleo: #005F6B;
+  --brand-petroleo-escuro: #074B56;
+  --brand-sage: #94A69A;
+  --brand-sage-claro: #D9E4E0;
+  --brand-sage-tint: #E7EBE9;
+  --brand-sage-suave: #CBD6CF;
+  --brand-ink: #1F2421;
+  --brand-white: #FFFFFF;
 
   /* === CORES NEUTRAS === */
-  --color-text: #23324B;
-  --color-text-inverse: #F7F3E8;
-  --color-muted: #5A6474;
-  --color-surface: rgba(255, 255, 255, 0.9);
-  --color-surface-strong: #FFFFFF;
-  --color-border: rgba(35, 50, 75, 0.12);
+  --color-text: var(--brand-ink);
+  --color-text-inverse: var(--brand-white);
+  --color-muted: #4C5753;
+  --color-surface: rgba(255, 255, 255, 0.92);
+  --color-surface-strong: var(--brand-white);
+  --color-border: rgba(31, 36, 33, 0.12);
 
-  /* === ZONAS DO PÔSTER (céu → creme → dourado → verde) === */
-  --zona-sky: #BDDDE2;
-  --zona-sky-claro: #D4E9EB;
-  --zona-creme: #F4EFDE;
-  --zona-dourado: #F0E0A6;
-  --zona-dourado-forte: #D9B84E;
-  --zona-verde: #B7D3A2;
-  --zona-verde-forte: #7FA86A;
+  /* === ZONAS (âncora escura → bandas claras) === */
+  --zona-petroleo: var(--brand-petroleo);
+  --zona-petroleo-claro: #0A6A76;
+  --zona-clara: #D8E1DC;
+  --zona-sage: var(--brand-sage);
+  --zona-sage-suave: var(--brand-sage-suave);
+  --zona-tint: var(--brand-sage-tint);
 
   /* === ESPAÇAMENTO === */
   --space-xs: 4px;
@@ -37,40 +46,40 @@
   --radius-full: 9999px;
 
   /* === SOMBRAS === */
-  --shadow-sm: 0 1px 2px rgba(35, 50, 75, 0.08);
-  --shadow-md: 0 4px 12px rgba(35, 50, 75, 0.1);
-  --shadow-lg: 0 12px 32px rgba(35, 50, 75, 0.16);
+  --shadow-sm: 0 1px 2px rgba(0, 95, 107, 0.1);
+  --shadow-md: 0 4px 12px rgba(0, 95, 107, 0.12);
+  --shadow-lg: 0 12px 32px rgba(0, 95, 107, 0.18);
 
   /* === CONTAINER === */
   --container: 640px;
 }
 
-/* === ESTAÇÃO 1 — Trilha de Novos (verde) === */
+/* === ESTAÇÃO 1 — verde (sage) === */
 [data-etapa="1"] {
-  --accent: #4F7234;
-  --accent-soft: #EAF1E1;
-  --accent-border: rgba(79, 114, 52, 0.22);
-  --accent-text: #35501F;
-  --accent-on-accent: #FFFFFF;
-  --accent-glow: rgba(79, 114, 52, 0.22);
+  --accent: var(--brand-petroleo);
+  --accent-soft: var(--brand-sage-tint);
+  --accent-border: rgba(0, 95, 107, 0.2);
+  --accent-text: var(--brand-ink);
+  --accent-on-accent: var(--brand-white);
+  --accent-glow: rgba(0, 95, 107, 0.18);
 }
 
-/* === ESTAÇÃO 2 — Praticando o Caminho (dourado) === */
+/* === ESTAÇÃO 2 — tons claros (quase branco) === */
 [data-etapa="2"] {
-  --accent: #8A5C0F;
-  --accent-soft: #FBF0DB;
-  --accent-border: rgba(138, 92, 15, 0.24);
-  --accent-text: #6B4A0C;
-  --accent-on-accent: #FFFFFF;
-  --accent-glow: rgba(138, 92, 15, 0.22);
+  --accent: var(--brand-petroleo);
+  --accent-soft: #F2F4F3;
+  --accent-border: rgba(0, 95, 107, 0.2);
+  --accent-text: var(--brand-ink);
+  --accent-on-accent: var(--brand-white);
+  --accent-glow: rgba(0, 95, 107, 0.18);
 }
 
-/* === ESTAÇÃO 3 — Fundamentos da Fé (azul) === */
+/* === ESTAÇÃO 3 — verde profundo (tint mais denso) === */
 [data-etapa="3"] {
-  --accent: #33557F;
-  --accent-soft: #E3EBF5;
-  --accent-border: rgba(51, 85, 127, 0.22);
-  --accent-text: #1E2F47;
-  --accent-on-accent: #FFFFFF;
-  --accent-glow: rgba(51, 85, 127, 0.22);
+  --accent: var(--brand-petroleo);
+  --accent-soft: #DEE5E0;
+  --accent-border: rgba(0, 95, 107, 0.22);
+  --accent-text: var(--brand-ink);
+  --accent-on-accent: var(--brand-white);
+  --accent-glow: rgba(0, 95, 107, 0.18);
 }
