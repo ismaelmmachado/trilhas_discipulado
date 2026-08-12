@@ -3,20 +3,21 @@
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
   /* === CORES NEUTRAS === */
-  --color-text: #1C1917;
-  --color-text-inverse: #F5F2EC;
-  --color-muted: #57534E;
-  --color-surface: rgba(255, 255, 255, 0.86);
+  --color-text: #23324B;
+  --color-text-inverse: #F7F3E8;
+  --color-muted: #5A6474;
+  --color-surface: rgba(255, 255, 255, 0.9);
   --color-surface-strong: #FFFFFF;
-  --color-border: rgba(28, 25, 23, 0.1);
+  --color-border: rgba(35, 50, 75, 0.12);
 
-  /* === ZONAS DO GRADIENTE (base → topo) === */
-  --zona-verde: #7A9B63;
-  --zona-verde-claro: #94AC77;
-  --zona-dourado: #D9C07A;
-  --zona-dourado-forte: #C4A24E;
-  --zona-azul: #3D5A80;
-  --zona-azul-escuro: #1F3247;
+  /* === ZONAS DO PÔSTER (céu → creme → dourado → verde) === */
+  --zona-sky: #BDDDE2;
+  --zona-sky-claro: #D4E9EB;
+  --zona-creme: #F4EFDE;
+  --zona-dourado: #F0E0A6;
+  --zona-dourado-forte: #D9B84E;
+  --zona-verde: #B7D3A2;
+  --zona-verde-forte: #7FA86A;
 
   /* === ESPAÇAMENTO === */
   --space-xs: 4px;
@@ -36,9 +37,9 @@
   --radius-full: 9999px;
 
   /* === SOMBRAS === */
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.06);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
-  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.14);
+  --shadow-sm: 0 1px 2px rgba(35, 50, 75, 0.08);
+  --shadow-md: 0 4px 12px rgba(35, 50, 75, 0.1);
+  --shadow-lg: 0 12px 32px rgba(35, 50, 75, 0.16);
 
   /* === CONTAINER === */
   --container: 640px;
@@ -46,30 +47,30 @@
 
 /* === ESTAÇÃO 1 — Trilha de Novos (verde) === */
 [data-etapa="1"] {
-  --accent: #5B7F3E;
+  --accent: #4F7234;
   --accent-soft: #EAF1E1;
-  --accent-border: rgba(91, 127, 62, 0.18);
-  --accent-text: #3E5628;
+  --accent-border: rgba(79, 114, 52, 0.22);
+  --accent-text: #35501F;
   --accent-on-accent: #FFFFFF;
-  --accent-glow: rgba(91, 127, 62, 0.28);
+  --accent-glow: rgba(79, 114, 52, 0.22);
 }
 
 /* === ESTAÇÃO 2 — Praticando o Caminho (dourado) === */
 [data-etapa="2"] {
-  --accent: #C28B24;
+  --accent: #8A5C0F;
   --accent-soft: #FBF0DB;
-  --accent-border: rgba(194, 139, 36, 0.22);
-  --accent-text: #7C540F;
+  --accent-border: rgba(138, 92, 15, 0.24);
+  --accent-text: #6B4A0C;
   --accent-on-accent: #FFFFFF;
-  --accent-glow: rgba(217, 164, 65, 0.28);
+  --accent-glow: rgba(138, 92, 15, 0.22);
 }
 
 /* === ESTAÇÃO 3 — Fundamentos da Fé (azul) === */
 [data-etapa="3"] {
   --accent: #33557F;
   --accent-soft: #E3EBF5;
-  --accent-border: rgba(51, 85, 127, 0.18);
+  --accent-border: rgba(51, 85, 127, 0.22);
   --accent-text: #1E2F47;
   --accent-on-accent: #FFFFFF;
-  --accent-glow: rgba(51, 85, 127, 0.28);
+  --accent-glow: rgba(51, 85, 127, 0.22);
 }
