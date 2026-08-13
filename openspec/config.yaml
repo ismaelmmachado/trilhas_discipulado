@@ -34,10 +34,10 @@ context: |
   - Tag: usar sempre a tag do contexto em que estamos trabalhando.
   - Tag específica informada pelo usuário tem precedência sobre qualquer padrão.
   - "main" só é usado quando solicitado explicitamente.
-  Contexto atual: hub journey-hub → tag v1.1.0 (anotada, home redesenhada a
-  partir do pôster). A tag v1.0.0 permanece publicada apontando para o hub
-  original. Mudanças sem bump (housekeeping/docs) mantêm a tag do contexto,
-  sem mover tag já publicada.
+  Contexto atual: hub journey-hub → tag v1.6.0 (anotada, estado atual da home
+  — pôster + rodapé escuro legível). Tags anteriores (v1.0.0–v1.5.0)
+  permanecem publicadas. Mudanças sem bump (housekeeping/docs) mantêm a tag do
+  contexto, sem mover tag já publicada.
 
   Deploy (GitHub Pages): Pages serve a raiz da branch "homologacao"; sem build
   step, basta git push origin homologacao. URL canônica:

@@ -11,7 +11,8 @@ Guia de convenções e contexto para agentes que trabalham neste repositório.
 5. `main` só é usado quando solicitado explicitamente.
 
 ### Contexto atual e tags
-- Contexto: **hub journey-hub** → tag **`v1.0.0`** (anotada, aponta para o commit do hub).
+- Contexto: **hub journey-hub** → tag **`v1.6.0`** (anotada, estado atual da home — pôster + rodapé escuro legível).
+- Tags anteriores (v1.0.0–v1.5.0) permanecem publicadas apontando para seus commits.
 - Mudanças que não geram bump (housekeeping/docs) **mantêm a tag do contexto**, sem mover tag já publicada.
 
 ## Projeto
