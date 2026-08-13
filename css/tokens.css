@@ -23,6 +23,7 @@
   /* === ZONAS (âncora escura → bandas claras) === */
   --zona-petroleo: var(--brand-petroleo);
   --zona-petroleo-claro: #0A6A76;
+  --zona-petroleo-escuro: var(--brand-petroleo-escuro);
   --zona-clara: #D8E1DC;
   --zona-sage: var(--brand-sage);
   --zona-sage-suave: var(--brand-sage-suave);
