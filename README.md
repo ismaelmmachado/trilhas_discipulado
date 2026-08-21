@@ -42,9 +42,11 @@ gh api repos/ismaelmmachado/trilhas_discipulado/pages  # status: built
 ## Estrutura
 
 - `index.html` — header, hero, cards de estação, ápice "DISCÍPULO" e footer.
+- `material-de-apoio.html` — materiais de apoio em 5 categorias.
+- `rci.html` — guia da R.C.I. em 14 seções.
 - `css/tokens.css`, `css/estilo.css` — tokens e estilos.
 - `favicon.svg`, `og-image.svg` — identidade.
-- `openspec/` — especificação do hub (`journey-hub`).
+- `openspec/` — especificações (`journey-hub`, `material-de-apoio`, `rci`).
 
 ## Git
 

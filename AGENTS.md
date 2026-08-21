@@ -11,8 +11,8 @@ Guia de convenções e contexto para agentes que trabalham neste repositório.
 5. `main` só é usado quando solicitado explicitamente.
 
 ### Contexto atual e tags
-- Contexto: **hub journey-hub** → tag **`v1.8.0`** (anotada, home + página Material de Apoio e R.C.I. no menu).
-- Tags anteriores (v1.0.0–v1.5.0) permanecem publicadas apontando para seus commits.
+- Contexto: **hub journey-hub** → tag **`v1.9.0`** (anotada, páginas Material de Apoio e R.C.I. publicadas; R.C.I. unificada em `rci.html`).
+- Tags anteriores (v1.0.0–v1.8.0) permanecem publicadas apontando para seus commits.
 - Mudanças que não geram bump (housekeeping/docs) **mantêm a tag do contexto**, sem mover tag já publicada.
 
 ## Projeto
@@ -30,9 +30,11 @@ Publicado via GitHub Pages em: `https://ismaelmmachado.github.io/trilhas_discipu
 ### Estrutura
 - `index.html` — header (🧭), hero, 3 cards de estação conectados, ápice "DISCÍPULO"
   (SVG inline do caminhante rumo à cruz) e footer.
+- `material-de-apoio.html` — materiais de apoio em 5 categorias.
+- `rci.html` — guia da R.C.I. em 14 seções (versão antiga preservada na branch `rci/vantiga`).
 - `css/tokens.css`, `css/estilo.css` — estilo.
 - `favicon.svg`, `og-image.svg` — identidade.
-- `openspec/` — documentação spec-driven (spec `journey-hub`).
+- `openspec/` — documentação spec-driven (specs `journey-hub`, `material-de-apoio`, `rci`).
 - `AGENTS.md`, `README.md` — documentação do projeto.
 
 ### Trilhas existentes (repos separados, já publicados)
