@@ -265,11 +265,6 @@
   letter-spacing: 0.02em;
 }
 
-/* === Link "Ver nova versão" na página antiga === */
-.rci-versao-novo { margin: var(--space-4) 0 var(--space-xl); text-align: center; }
-.rci-versao-novo a { color: var(--cor-secundaria); font-size: var(--text-sm); font-weight: 600; transition: color 0.2s; }
-.rci-versao-novo a:hover { color: var(--cor-secundaria-escuro); text-decoration: underline; }
-
 /* === BREADCRUMB === */
 .breadcrumb {
   display: flex;
