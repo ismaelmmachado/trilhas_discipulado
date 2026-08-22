@@ -39,6 +39,10 @@ Após o push, aguarde o build e confira:
 gh api repos/ismaelmmachado/trilhas_discipulado/pages  # status: built
 ```
 
+Se o build não disparar (`pages/builds/latest` mostrando commit antigo — pushes
+feitos com token que não dispara workflows), faça o push via git local ou um
+commit vazio para acionar o workflow de deploy.
+
 ## Estrutura
 
 - `index.html` — header, hero, cards de estação, ápice "DISCÍPULO" e footer.

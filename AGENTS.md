@@ -11,8 +11,8 @@ Guia de convenções e contexto para agentes que trabalham neste repositório.
 5. `main` só é usado quando solicitado explicitamente.
 
 ### Contexto atual e tags
-- Contexto: **hub journey-hub** → tag **`v1.9.0`** (anotada, páginas Material de Apoio e R.C.I. publicadas; R.C.I. unificada em `rci.html`).
-- Tags anteriores (v1.0.0–v1.8.0) permanecem publicadas apontando para seus commits.
+- Contexto: **hub journey-hub** → tag **`v1.11.0`** (anotada; botão Ouvir no Spotify do Material de Apoio, menu de navegação em telas pequenas e rótulos curtos no fluxo da RCI).
+- Tags anteriores (v1.0.0–v1.10.0) permanecem publicadas apontando para seus commits.
 - Mudanças que não geram bump (housekeeping/docs) **mantêm a tag do contexto**, sem mover tag já publicada.
 
 ## Projeto
@@ -47,6 +47,9 @@ Publicado via GitHub Pages em: `https://ismaelmmachado.github.io/trilhas_discipu
 - GitHub Pages serve a partir da raiz (`/`) da branch **`homologacao`**.
 - Sem build step: basta `git push origin homologacao` para publicar o conteúdo commitado.
 - Verificação: `gh api repos/ismaelmmachado/trilhas_discipulado/pages` → `status: built`.
+- Build não disparou após o push (`pages/builds/latest` com commit antigo — pushes
+  com token que não dispara workflows)? Faça o push via git local ou um commit vazio
+  para acionar o workflow de deploy.
 - Observação: habilitar Pages pela 1ª vez exige permissão `pages` de escrita no token
   ou configuração manual em *Settings → Pages → Deploy from a branch → homologacao / (root)*.
 
