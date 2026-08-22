@@ -55,7 +55,7 @@ a { text-decoration: none; color: inherit; }
 /* === HEADER (verde petróleo) === */
 .hub-header {
   padding: var(--space-lg) 0;
-  background: var(--zona-petroleo);
+  background: var(--zona-petroleo-escuro);
 }
 
 .header-inner {
@@ -119,6 +119,12 @@ a { text-decoration: none; color: inherit; }
   outline: 2px solid var(--brand-white);
   outline-offset: 4px;
   border-radius: var(--radius-sm);
+}
+
+.nav a.active {
+  color: var(--brand-white);
+  text-decoration: underline;
+  text-underline-offset: 6px;
 }
 
 /* === HERO (verde petróleo, âncora escura) === */

@@ -308,13 +308,6 @@
   color: var(--color-text);
 }
 
-/* === NAV ativo === */
-.nav a.active {
-  color: var(--brand-white);
-  text-decoration: underline;
-  text-underline-offset: 6px;
-}
-
 /* === RESPONSIVO === */
 @media (max-width: 520px) {
   .rci-section h2 { font-size: 1.35rem; }

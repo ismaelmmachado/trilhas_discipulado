@@ -143,13 +143,6 @@
   color: var(--color-text);
 }
 
-/* === NAV ativo === */
-.nav a.active {
-  color: var(--brand-white);
-  text-decoration: underline;
-  text-underline-offset: 6px;
-}
-
 @media (max-width: 480px) {
   .apoio-item {
     flex-direction: column;
