@@ -504,7 +504,17 @@ a { text-decoration: none; color: inherit; }
 /* === RESPONSIVO === */
 @media (max-width: 520px) {
   .hub-header { padding: var(--space-md) 0; }
-  .nav { display: none; }
+  .header-inner {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-sm);
+  }
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-sm) var(--space-md);
+  }
   .hero { padding: var(--space-2xl) 0 var(--space-xl); }
   .estacao-card { padding: var(--space-lg); }
   .estacao-icono { width: 56px; height: 56px; font-size: 1.7rem; border-radius: 16px; }
