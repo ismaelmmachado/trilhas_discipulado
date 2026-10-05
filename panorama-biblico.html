@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panorama Bíblico · A Jornada do Discípulo</title>
+  <meta name="description" content="Visões gerais animadas de cada livro da Bíblia, em parceria com o BibleProject" />
+  <meta property="og:title" content="Panorama Bíblico · A Jornada do Discípulo" />
+  <meta property="og:description" content="Visões gerais animadas de cada livro da Bíblia, em parceria com o BibleProject" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ismaelmmachado.github.io/trilhas_discipulado/panorama-biblico.html" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:image" content="https://ismaelmmachado.github.io/trilhas_discipulado/og-image.svg" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&display=swap" /></noscript>
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/estilo.css" />
+  <link rel="stylesheet" href="css/panorama.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Ir para o conteúdo</a>
+
+  <header class="hub-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="hub-brand" aria-label="A Jornada do Discípulo — Página inicial">
+        <span class="hub-brand-icon" aria-hidden="true">🧭</span>
+        <span class="hub-brand-text">
+          <span class="hub-brand-title">A Jornada do Discípulo</span>
+          <span class="hub-brand-sub">Comunidade Vitral</span>
+        </span>
+      </a>
+      <nav class="nav" role="navigation" aria-label="Navegação principal">
+        <a href="index.html#trilhas">As Trilhas</a>
+        <a href="material-de-apoio.html">Material de Apoio</a>
+        <a href="rci.html">R.C.I.</a>
+        <a href="panorama-biblico.html" class="active" aria-current="page">Panorama Bíblico</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Breadcrumb -->
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Início</a>
+        <span class="breadcrumb-sep" aria-hidden="true">/</span>
+        <span>Panorama Bíblico</span>
+      </nav>
+    </div>
+
+    <!-- Hero -->
+    <section class="panorama-hero">
+      <div class="container">
+        <span class="hero-eyebrow">📖 Panorama Bíblico</span>
+        <h1 class="hero-titulo">Panorama Bíblico</h1>
+        <p class="hero-subtitulo">Visões gerais animadas de cada livro da Bíblia, em parceria com o BibleProject</p>
+        <a href="#nt" class="btn btn-hero">Começar pelo Novo Testamento</a>
+      </div>
+    </section>
+
+    <!-- Como usar -->
+    <section class="panorama-section">
+      <div class="container">
+        <h2 class="section-title">Como usar esta página</h2>
+        <div class="panorama-uso-grid">
+          <div class="panorama-uso-card">
+            <h3>Estudo pessoal</h3>
+            <p>Escolha um livro, assista ao panorama, depois leia a Bíblia com novos olhos.</p>
+          </div>
+          <div class="panorama-uso-card">
+            <h3>Pequeno grupo</h3>
+            <p>Assista junto e discuta as perguntas sugeridas no final de cada vídeo.</p>
+          </div>
+          <div class="panorama-uso-card">
+            <h3>Ao percorrer as trilhas</h3>
+            <p>Encontrou um livro que não entende? Volte aqui para um panorama rápido.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Novo Testamento -->
+    <section class="panorama-section" id="nt">
+      <div class="container">
+        <h2 class="section-title">Novo Testamento</h2>
+        <div class="panorama-livros-grid" id="grid-nt">
+          <!-- Cards serão inseridos dinamicamente pelo JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Antigo Testamento -->
+    <section class="panorama-section" id="at">
+      <div class="container">
+        <h2 class="section-title">Antigo Testamento</h2>
+        <div class="panorama-livros-grid" id="grid-at">
+          <!-- Cards serão inseridos dinamicamente pelo JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Downloads -->
+    <section class="panorama-section panorama-downloads">
+      <div class="container">
+        <h2 class="section-title">Downloads</h2>
+        <p>Baixe pôsteres e materiais de estudo oficiais do BibleProject</p>
+        <a href="https://bibleproject.com/pt-br/downloads/" class="panorama-downloads-link" target="_blank" rel="noopener noreferrer">
+          Explorar Downloads →
+        </a>
+      </div>
+    </section>
+
+    <!-- Voltar ao hub -->
+    <section class="panorama-section panorama-voltar">
+      <div class="container">
+        <h2 class="section-title">Voltar ao hub</h2>
+        <div class="panorama-voltar-links">
+          <a href="index.html">← Página inicial</a>
+          <a href="material-de-apoio.html">← Material de Apoio</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <strong>A Jornada do Discípulo</strong>
+      <p>Comunidade Vitral · IPIB São José do Rio Preto</p>
+      <p class="footer-frase">SER + FAZER + SABER</p>
+      <a href="#main" class="back-to-top" aria-label="Voltar ao topo">↑ Voltar ao topo</a>
+    </div>
+  </footer>
+
+  <script src="js/panorama-data.js"></script>
+  <script>
+    // Função para obter URL válida ou fallback de busca
+    function getUrlLivro(livro) {
+      if (livro.url && livro.url !== "#" && !livro.url.includes("TODO")) {
+        return livro.url;
+      }
+      return `https://bibleproject.com/pt-br/search?q=${encodeURIComponent(livro.nome)}`;
+    }
+
+    // Renderizar cards do Novo Testamento
+    const gridNT = document.getElementById('grid-nt');
+    if (gridNT) {
+      PANORAMA.nt.forEach(livro => {
+        const card = document.createElement('div');
+        card.className = 'panorama-livro-card';
+        card.innerHTML = `
+          <div class="panorama-livro-thumbnail" title="${livro.nome}">
+            ${livro.nome.charAt(0)}
+          </div>
+          <div class="panorama-livro-info">
+            <h3>${livro.nome}</h3>
+            <p>${livro.frase}</p>
+          </div>
+          <a href="${getUrlLivro(livro)}" class="panorama-livro-link" target="_blank" rel="noopener noreferrer">
+            Assistir no BibleProject →
+          </a>
+        `;
+        gridNT.appendChild(card);
+      });
+    }
+
+    // Renderizar cards do Antigo Testamento
+    const gridAT = document.getElementById('grid-at');
+    if (gridAT) {
+      PANORAMA.at.forEach(livro => {
+        const card = document.createElement('div');
+        card.className = 'panorama-livro-card';
+        card.innerHTML = `
+          <div class="panorama-livro-thumbnail" title="${livro.nome}">
+            ${livro.nome.charAt(0)}
+          </div>
+          <div class="panorama-livro-info">
+            <h3>${livro.nome}</h3>
+            <p>${livro.frase || 'Descrição pendente de validação'}</p>
+          </div>
+          <a href="${getUrlLivro(livro)}" class="panorama-livro-link" target="_blank" rel="noopener noreferrer">
+            ${livro.url && livro.url !== "#" ? 'Assistir no BibleProject →' : 'Buscar no BibleProject →'}
+          </a>
+        `;
+        gridAT.appendChild(card);
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,255 @@
+/* == PANORAMA BÍBLICO == */
+
+/* Utiliza os tokens existentes do projeto */
+
+/* Layout da página */
+.panorama-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header já vem do estilo global, mas garantimos consistência */
+.panorama-page .hub-header {
+  background-color: var(--zona-petroleo-escuro);
+}
+
+/* Hero específica do panorama */
+.panorama-hero {
+  background: linear-gradient(to bottom, var(--zona-petroleo-escuro), var(--zona-petroleo-claro));
+  color: var(--color-text-inverse);
+  text-align: center;
+  padding: var(--space-3xl) var(--space-md);
+  position: relative;
+  overflow: hidden;
+}
+
+.panorama-hero .hero-eyebrow {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.panorama-hero .hero-titulo {
+  font-size: 2rem;
+  margin: var(--space-sm) 0;
+  font-family: var(--font-heading);
+}
+
+.panorama-hero .hero-subtitulo {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-lg);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.4;
+}
+
+.panorama-hero .btn-hero {
+  background-color: var(--brand-white);
+  color: var(--zona-petroleo-escuro);
+  border: none;
+}
+
+.panorama-hero .btn-hero:hover {
+  background-color: var(--zona-sage-suave);
+}
+
+/* Seções */
+.panorama-section {
+  padding: var(--space-3xl) var(--space-md);
+  background-color: var(--zona-clara);
+}
+
+.panorama-section:nth-child(even) {
+  background-color: var(--zona-sage-suave);
+}
+
+.panorama-section .section-title {
+  font-size: 1.75rem;
+  margin-bottom: var(--space-lg);
+  color: var(--zona-petroleo-escuro);
+  text-align: center;
+  font-family: var(--font-heading);
+}
+
+/* Cards de uso */
+.panorama-uso-grid {
+  display: grid;
+  gap: var(--space-md);
+  grid-template-columns: 1fr;
+  margin-top: var(--space-lg);
+}
+
+@media (min-width: 520px) {
+  .panorama-uso-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.panorama-uso-card {
+  background: var(--color-surface-strong);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--space-xs) ease-in-out;
+}
+
+.panorama-uso-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.panorama-uso-card h3 {
+  margin-bottom: var(--space-sm);
+  color: var(--zona-petroleo-escuro);
+}
+
+/* Grid de livros (NT e AT) */
+.panorama-livros-grid {
+  display: grid;
+  gap: var(--space-sm);
+  grid-template-columns: 1fr;
+  margin-top: var(--space-lg);
+}
+
+@media (min-width: 520px) {
+  .panorama-livros-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .panorama-livros-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.panorama-livro-card {
+  background: var(--color-surface-strong);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform var(--space-xs) ease-in-out, box-shadow var(--space-xs) ease-in-out;
+}
+
+.panorama-livro-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.panorama-livro-thumbnail {
+  width: 100%;
+  height: 180px;
+  background-color: var(--zona-sage-suave);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: var(--zona-petroleo-escuro);
+  opacity: 0.8;
+}
+
+.panorama-livro-info {
+  flex: 1;
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+}
+
+.panorama-livro-info h3 {
+  margin: 0 0 var(--space-xs) 0;
+  font-size: 1.1rem;
+  color: var(--zona-petroleo-escuro);
+  flex-grow: 1;
+}
+
+.panorama-livro-info p {
+  margin: 0 0 var(--space-md) 0;
+  font-size: 0.9rem;
+  color: var(--color-text);
+  line-height: 1.4;
+  flex-grow: 1;
+}
+
+.panorama-livro-link {
+  margin-top: auto;
+  align-self: flex-start;
+  padding: var(--space-xs) var(--space-sm);
+  background-color: var(--zona-petroleo-escuro);
+  color: var(--color-text-inverse);
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: background-color var(--space-xs) ease-in-out;
+}
+
+.panorama-livro-link:hover {
+  background-color: var(--zona-petroleo);
+}
+
+/* Seção de downloads */
+.panorama-downloads {
+  text-align: center;
+  padding: var(--space-lg) var(--space-md);
+  background-color: var(--zona-sage);
+}
+
+.panorama-downloads-link {
+  display: inline-block;
+  padding: var(--space-sm) var(--space-lg);
+  background-color: var(--zona-petroleo-escuro);
+  color: var(--color-text-inverse);
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color var(--space-xs) ease-in-out;
+}
+
+.panorama-downloads-link:hover {
+  background-color: var(--zona-petroleo);
+}
+
+/* Voltar ao hub */
+.panorama-voltar {
+  text-align: center;
+  padding: var(--space-lg) var(--space-md);
+  background-color: var(--zona-clara);
+  border-top: 1px solid var(--color-border);
+}
+
+.panorama-voltar-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.panorama-voltar-links a {
+  color: var(--zona-petroleo-escuro);
+  text-decoration: none;
+  font-weight: 500;
+  padding: var(--space-xs) 0;
+}
+
+.panorama-voltar-links a:hover {
+  text-decoration: underline;
+}
+
+/* Footer já vem do estilo global */
+.panorama-page .site-footer {
+  margin-top: auto;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

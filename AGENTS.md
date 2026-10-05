@@ -35,6 +35,9 @@ Publicado via GitHub Pages em: `https://ismaelmmachado.github.io/trilhas_discipu
 - `css/tokens.css`, `css/estilo.css` — estilo.
 - `favicon.svg`, `og-image.svg` — identidade.
 - `openspec/` — documentação spec-driven (specs `journey-hub`, `material-de-apoio`, `rci`).
+- `panorama-biblico.html` — biblioteca de visões gerais dos 66 livros, em parceria com o BibleProject.
+- `css/panorama.css` — estilos específicos da página de panorama.
+- `js/panorama-data.js` — dados dos 66 livros (nome, slug, frase, url).
 - `AGENTS.md`, `README.md` — documentação do projeto.
 
 ### Trilhas existentes (repos separados, já publicados)
